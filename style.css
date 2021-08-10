@@ -78,6 +78,20 @@ body {
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 43.17px;
+}
+
+.competences { margin-left: 43px; }
+
+.cmp-ttl { margin-bottom: 24px; }
+
+.cmp-ttl h3 {
+	font-size: 12px;
+	font-weight: 500;
+	color: #9490FF;
+}
+
+.competence {
+	margin-bottom: 21px;
+	font-size: 15px;
+	font-weight: 400px;
 }
