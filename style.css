@@ -37,3 +37,16 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
+.titles {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titles * {
+	width: max-content;
+	height: auto;
+}
