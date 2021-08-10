@@ -111,3 +111,12 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+
+/* Transition button */
+.btn-work {
+	width: 77px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
