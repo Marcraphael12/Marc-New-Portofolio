@@ -73,6 +73,7 @@ body {
 	color: #C8C8D4;
 }
 
+/* Soft Skills */
 .skills {
 	width: 100%;
 	height: auto;
@@ -94,4 +95,19 @@ body {
 	margin-bottom: 21px;
 	font-size: 15px;
 	font-weight: 400px;
+}
+
+/* Socials */
+.join {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.Socials {
+	width: 200px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
 }
