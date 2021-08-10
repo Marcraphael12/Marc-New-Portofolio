@@ -21,11 +21,12 @@ body {
 	flex-direction: row;
 	align-content: center;
 	justify-content: space-between;
+	margin-bottom: 47px;
 }
 
 #main {
 	width: 375px;
 	display: flex;
 	flex-direction: column;
-	height: auto; 
+	height: auto;
 }
