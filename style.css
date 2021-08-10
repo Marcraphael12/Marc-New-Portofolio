@@ -24,6 +24,7 @@ body {
 	align-content: center;
 	justify-content: space-between;
 	margin-bottom: 47px;
+	padding: 24px;
 }
 
 #main {
@@ -58,11 +59,13 @@ body {
 	color: #7D73FC;
 	font-size: 48px;
 	font-weight: 700;
+	margin-bottom: 30px;
 }
 
 .titles h2 {
 	font-size: 32px;
 	font-weight: 500;
+	margin-bottom: 70px;
 }
 
 #sct1 .para {
@@ -71,6 +74,9 @@ body {
 	font-weight: 400;
 	width: 327px;
 	color: #C8C8D4;
+	border-bottom: 2px solid #646369;
+	padding-bottom: 33px;
+	margin-bottom: 37px;
 }
 
 /* Soft Skills */
@@ -79,6 +85,15 @@ body {
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.skills::after {
+	content: " ";
+	width: 88%;
+	height: 2px;
+	background-color: #646369;
+	margin: auto;
+	margin-bottom: 65px;
 }
 
 .competences { margin-left: 43px; }
@@ -103,6 +118,7 @@ body {
 	height: auto;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 28px;
 }
 
 .Socials {
@@ -118,5 +134,5 @@ body {
 	height: 40px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
