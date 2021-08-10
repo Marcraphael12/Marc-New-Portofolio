@@ -1,99 +1,99 @@
 * {
-	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-	list-style-type: none;
-	text-decoration: none;
-	color: white;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-	background: none;
-	border: none;
+  background: none;
+  border: none;
 }
 
 body {
-	background-color: #191765;
+  background-color: #191765;
 }
 
 .pg-hdr {
-	width: 375px;
-	display: flex;
-	flex-direction: row;
-	align-content: center;
-	justify-content: space-between;
-	margin-bottom: 47px;
-	padding: 24px;
+  width: 375px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 47px;
+  padding: 24px;
 }
 
 #main {
-	width: 375px;
-	display: flex;
-	flex-direction: column;
-	height: auto;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 #sct1 {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titles {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .titles * {
-	width: max-content;
-	height: auto;
+  width: max-content;
+  height: auto;
 }
 
 .titles h1 {
-	color: #7D73FC;
-	font-size: 48px;
-	font-weight: 700;
-	margin-bottom: 30px;
+  color: #7d73fc;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .titles h2 {
-	font-size: 32px;
-	font-weight: 500;
-	margin-bottom: 70px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 70px;
 }
 
 #sct1 .para {
-	text-align: center;
-	font-size: 20px;
-	font-weight: 400;
-	width: 327px;
-	color: #C8C8D4;
-	border-bottom: 2px solid #646369;
-	padding-bottom: 33px;
-	margin-bottom: 37px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  width: 327px;
+  color: #c8C8d4;
+  border-bottom: 2px solid #646369;
+  padding-bottom: 33px;
+  margin-bottom: 37px;
 }
 
 /* Soft Skills */
 .skills {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills::after {
-	content: " ";
-	width: 88%;
-	height: 2px;
-	background-color: #646369;
-	margin: auto;
-	margin-bottom: 65px;
+  content: " ";
+  width: 88%;
+  height: 2px;
+  background-color: #646369;
+  margin: auto;
+  margin-bottom: 65px;
 }
 
 .competences { margin-left: 43px; }
@@ -101,38 +101,38 @@ body {
 .cmp-ttl { margin-bottom: 24px; }
 
 .cmp-ttl h3 {
-	font-size: 12px;
-	font-weight: 500;
-	color: #9490FF;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9490ff;
 }
 
 .competence {
-	margin-bottom: 21px;
-	font-size: 15px;
-	font-weight: 400px;
+  margin-bottom: 21px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /* Socials */
 .join {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 28px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
 }
 
 .Socials {
-	width: 200px;
-	height: auto;
-	display: flex;
-	justify-content: space-between;
+  width: 200px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Transition button */
 .btn-work {
-	width: 77px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  width: 77px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
