@@ -22,3 +22,10 @@ body {
 	align-content: center;
 	justify-content: space-between;
 }
+
+#main {
+	width: 375px;
+	display: flex;
+	flex-direction: column;
+	height: auto; 
+}
