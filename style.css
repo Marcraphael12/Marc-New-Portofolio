@@ -51,6 +51,17 @@ body {
 	height: auto;
 }
 
+.titles h1 {
+	color: #7D73FC;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.titles h2 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
 #sct1 .para {
 	text-align: center;
 	font-size: 20px;
