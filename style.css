@@ -14,3 +14,11 @@ button {
 body {
 	background-color: #191765;
 }
+
+.pg-hdr {
+	width: 375px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+}
