@@ -6,6 +6,11 @@
 	color: white;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 body {
 	background-color: #191765;
 }
