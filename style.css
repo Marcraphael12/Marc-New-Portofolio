@@ -34,7 +34,7 @@ body {
   height: auto;
 }
 
-#sct1 {
+.section { /* global style for sections */
   width: 100%;
   height: auto;
   display: flex;
@@ -138,3 +138,7 @@ body {
 }
 
 /* Work section */
+.work-img {
+  width: 327px;
+  height: auto;
+}
