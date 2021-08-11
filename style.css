@@ -138,6 +138,20 @@ body {
 }
 
 /* Work section */
+.work-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.work-list-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .work-img {
   width: 327px;
   height: auto;
