@@ -153,6 +153,7 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .work-img {
