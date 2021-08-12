@@ -254,6 +254,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
+  margin-top: 80px;
 }
 
 .ttl-para {
@@ -356,4 +357,5 @@ input, textarea {
   background-color: #0d151e;
   margin-top: 27px;
   margin-bottom: 8px;
+  border-radius: 15%;
 }
