@@ -247,3 +247,12 @@ body {
   background-color: #646369;
   margin: 34px 0 48px 0;
 }
+
+/* The footer with the form and social links */
+.footer {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 24px;
+}
