@@ -15,6 +15,9 @@ button {
 
 body {
   background-color: #191765;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pg-hdr {
@@ -34,7 +37,7 @@ body {
   height: auto;
 }
 
-#sct1 {
+.section { /* global style for sections */
   width: 100%;
   height: auto;
   display: flex;
@@ -135,4 +138,110 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Work section */
+#sct2 { margin-top: 83px; }
+
+.work-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0 24px;
+}
+
+.work-list-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.work-img {
+  width: 327px;
+  height: auto;
+}
+
+.block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.block h3 {
+  font-size: 32px;
+  font-weight: 500;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.work-para {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  color: #dcdce8;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+}
+
+.techs {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.tech {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #646369;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tech:last-child { border-right: none; }
+
+.see-project {
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7d73fc;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.see-project:hover {
+  box-shadow: 0 0 5px #7d73fc;
+  border: 1px solid white;
+}
+
+.recent-work {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 52px;
+  color: #9490ff;
+}
+
+.work-list-item:first-child::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #646369;
+  margin: 34px 0 48px 0;
 }
