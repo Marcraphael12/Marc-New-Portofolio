@@ -269,20 +269,20 @@ body {
 }
 
 .contact-us {
-font-weight: 500;
-font-size: 32px;
-text-transform: uppercase;
-line-height: 44px;
-color: #9390ff;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 44px;
+  color: #9390ff;
 }
 
-.ttl-para .para {
-font-family: 'Inter', sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-text-align: center;
-color: #f5f5ff;
+.ftr-para {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
 }
 
 /* The form */
@@ -301,7 +301,8 @@ label {
   display: none;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 15px;
