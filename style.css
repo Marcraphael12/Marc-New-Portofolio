@@ -254,7 +254,6 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 24px;
 }
 
 .ttl-para {
@@ -265,6 +264,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  padding: 24px;
 }
 
 .contact-us {
@@ -291,14 +291,9 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-form:after {
-  content: " ";
-  width: 100%;
-  height: 2px;
-  background-color: #3a3837;
-  margin: 71px 0 25px 0;
+  padding: 0 24px 71px 24px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #3a3837;
 }
 
 label {
