@@ -283,3 +283,15 @@ line-height: 24px;
 text-align: center;
 color: #F5F5FF;
 }
+
+/* The form */
+form {
+  width: 100%;
+  height: 292px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  display: none;
+}
