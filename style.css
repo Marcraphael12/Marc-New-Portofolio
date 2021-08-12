@@ -259,13 +259,13 @@ body {
 
 .ttl-para {
   width: 100%;
-  height: 164px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
-  padding: 24px;
+  padding: 0 24px;
 }
 
 .contact-us {
@@ -274,6 +274,7 @@ body {
   text-transform: uppercase;
   line-height: 44px;
   color: #9390ff;
+  margin-bottom: 24px;
 }
 
 .ftr-para {
@@ -351,7 +352,7 @@ textarea {
   margin-bottom: 0;
 }
 
-.ftr-join:after {
+.ftr-join::after {
   content: " ";
   width: 134px;
   height: 5px;
