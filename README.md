@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Download the repo, if you don't know how to do it, just [click here](https://github.com/Marcraphael12/Marc-Raphael-Portofolio/archive/refs/heads/main.zip)!
+- Download the repo, if you don't know how to do it, just [click here](https://github.com/Marcraphael12/Marc-New-Portofolio/archive/refs/heads/main.zip)!
 - Open the index file with your browser, and enjoy!
 
 ### Install
@@ -41,7 +41,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Have a detailed view by clicking here](https://marcraphael12.github.io/Marc-Raphael-Portofolio/)
+[Have a detailed view by clicking here](https://marcraphael12.github.io/Marc-New-Portofolio/)
 
 ### Author
 👤 **Marc Raphael**
@@ -54,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Marcraphael12/Marc-Raphael-Portofolio/issues).
+Feel free to check the [issues page](https://github.com/Marcraphael12/Marc-New-Portofolio/issues).
 
 ## Show your support
 
