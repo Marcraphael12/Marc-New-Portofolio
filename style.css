@@ -120,7 +120,9 @@ body {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 28px;
 }
 
@@ -244,4 +246,118 @@ body {
   height: 2px;
   background-color: #646369;
   margin: 34px 0 48px 0;
+}
+
+/* The footer with the form and social links */
+.footer {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: 80px;
+}
+
+.ttl-para {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 24px;
+}
+
+.contact-us {
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 44px;
+  color: #9390ff;
+  margin-bottom: 24px;
+}
+
+.ftr-para {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #f5f5ff;
+}
+
+/* The form */
+form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 24px 71px 24px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #3a3837;
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  outline: unset;
+  color: #191765;
+  padding-inline-start: 18px;
+}
+
+.name-email {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.name::placeholder {
+  color: #646369;
+}
+
+.email::placeholder {
+  color: #191765;
+}
+
+.message {
+  width: 100%;
+  height: 148px;
+  resize: none;
+  padding-block-start: 18px;
+  margin-bottom: 40px;
+}
+
+.my-mail {
+  margin-top: 9px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.my-mail:hover {
+  color: #7d73fc;
+}
+
+.ftr-join {
+  margin-bottom: 0;
+}
+
+.ftr-join::after {
+  content: " ";
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  margin-top: 27px;
+  margin-bottom: 8px;
+  border-radius: 15%;
 }
