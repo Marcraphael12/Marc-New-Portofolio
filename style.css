@@ -381,4 +381,12 @@ textarea {
     font-size: 40px;
     font-weight: 500;
   }
+
+  .skills::after {
+    width: 100%;
+  }
+
+  ul.competences:first-child {
+    margin-left: 0;
+  }
 }
