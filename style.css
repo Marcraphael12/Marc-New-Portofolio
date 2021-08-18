@@ -362,6 +362,22 @@ textarea {
   border-radius: 15%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 414px) {
+  #sct1 .para {
+    width: 100%;
+  }
 
+  #sct1 {
+    max-width: 447px;
+  }
+
+  .titles h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  .titles h2 {
+    font-size: 40px;
+    font-weight: 500;
+  }
 }
