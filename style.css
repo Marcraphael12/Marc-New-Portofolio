@@ -155,7 +155,7 @@ body {
 }
 
 .work-list-item {
-  width: 100%;
+  max-width: 500px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -163,7 +163,7 @@ body {
 }
 
 .work-img {
-  width: 327px;
+  width: auto;
   height: auto;
 }
 
@@ -388,5 +388,9 @@ textarea {
 
   ul.competences:first-child {
     margin-left: 0;
+  }
+
+  .work-list-item:first-child {
+    max-width: 100%;
   }
 }
