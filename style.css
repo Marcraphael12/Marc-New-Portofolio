@@ -31,10 +31,11 @@ body {
 }
 
 #main {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
+  align-items: center;
 }
 
 .section { /* global style for sections */
