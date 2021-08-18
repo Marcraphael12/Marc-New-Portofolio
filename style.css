@@ -193,7 +193,7 @@ body {
 }
 
 .techs {
-  width: 100%;
+  max-width: 302px;
   height: 40px;
   display: flex;
   flex-direction: row;
