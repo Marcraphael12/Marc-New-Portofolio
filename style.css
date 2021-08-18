@@ -152,6 +152,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 0 24px;
+  justify-content: center;
 }
 
 .work-list-item {
