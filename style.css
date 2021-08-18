@@ -391,6 +391,8 @@ textarea {
     margin-left: 0;
   }
 
+  .competences { margin-left: 90px; }
+
   .work-list-item:first-child {
     max-width: 100%;
   }
