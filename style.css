@@ -164,7 +164,7 @@ body {
 }
 
 .work-img {
-  width: auto;
+  max-width: 470px;
   height: auto;
 }
 
