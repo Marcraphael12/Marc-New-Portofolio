@@ -152,7 +152,6 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 0 24px;
-
 }
 
 .work-list-item {
@@ -426,11 +425,13 @@ textarea {
     margin-right: 36px;
   }
 
-  .work-list-item:nth-child(3), .work-list-item:last-child {
+  .work-list-item:nth-child(3),
+  .work-list-item:last-child {
     flex-direction: row-reverse;
   }
 
-  .work-list-item:nth-child(3) .work-img, .work-list-item:last-child .work-img {
+  .work-list-item:nth-child(3) .work-img,
+  .work-list-item:last-child .work-img {
     margin-right: 0;
     margin-left: 36px;
   }
