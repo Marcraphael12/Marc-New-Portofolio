@@ -404,7 +404,6 @@ textarea {
 
   .work-img {
     width: 100%;
-    height: calc(width - 100px);
   }
 
   .work-list-item:first-child {
@@ -422,6 +421,7 @@ textarea {
   .work-list-item {
     max-width: 1156px;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .work-img {
