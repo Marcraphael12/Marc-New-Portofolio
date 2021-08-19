@@ -413,7 +413,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .titles h1 {
     font-size: 90px;
   }
@@ -425,6 +425,7 @@ textarea {
   }
 
   .work-img {
+    width: 470px;
     margin-right: 36px;
   }
 
