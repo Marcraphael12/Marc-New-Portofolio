@@ -393,8 +393,8 @@ textarea {
   .competences { margin-left: 90px; }
 
   .work-list {
-    align-items: center;
-    max-width: 1300px
+    max-width: 1300px;
+    justify-content: center;
   }
 
   .work-list-item {
@@ -416,6 +416,10 @@ textarea {
 @media screen and (min-width: 900px) {
   .titles h1 {
     font-size: 90px;
+  }
+
+  .work-list {
+    justify-content: normal;
   }
 
   .work-list-item {
