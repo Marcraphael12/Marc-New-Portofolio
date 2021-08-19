@@ -394,7 +394,7 @@ textarea {
 
   .work-list {
     align-items: center;
-    padding: 0 10% 0 10%;
+    max-width: 1300px
   }
 
   .work-list-item {
@@ -407,7 +407,7 @@ textarea {
   }
 
   .work-list-item:first-child {
-    max-width: 1156px;
+    max-width: 1200px;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -419,13 +419,14 @@ textarea {
   }
 
   .work-list-item {
-    max-width: 1156px;
+    max-width: 1200px;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 88px;
   }
 
   .work-img {
-    width: 470px;
+    max-width: 684px;
     margin-right: 36px;
   }
 
