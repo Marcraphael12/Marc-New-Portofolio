@@ -399,7 +399,7 @@ form div {
   }
 
   .competences { margin-left: 90px; }
-  
+
   .work-list {
     max-width: 1300px;
     justify-content: center;
@@ -435,7 +435,7 @@ form div {
   .ftr-join::after {
     display: none;
   }
-  
+
   .ftr-join {
     flex-direction: row;
     justify-content: space-between;
@@ -450,6 +450,7 @@ form div {
   form div {
     flex-direction: column !important;
   }
+
   .name-email {
     width: 100%;
   }
