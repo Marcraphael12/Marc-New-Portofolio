@@ -251,7 +251,7 @@ body {
 
 /* The footer with the form and social links */
 .footer {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -259,7 +259,7 @@ body {
 }
 
 .ttl-para {
-  width: 100%;
+  max-width: 684px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -292,8 +292,8 @@ form {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 0 24px 71px 24px;
   margin-bottom: 25px;
   border-bottom: 2px solid #3a3837;
@@ -313,6 +313,13 @@ textarea {
   padding-inline-start: 18px;
 }
 
+form div {
+  width: 100%;
+  max-width: 684px;
+  display: flex;
+
+}
+
 .name-email {
   width: 100%;
   height: 48px;
@@ -329,6 +336,7 @@ textarea {
 
 .message {
   width: 100%;
+  max-width: 684px;
   height: 148px;
   resize: none;
   padding-block-start: 18px;
@@ -367,45 +375,45 @@ textarea {
   #sct1 .para {
     width: 100%;
   }
-
+  
   #sct1 {
     max-width: 447px;
   }
-
+  
   .titles h1 {
     font-size: 70px;
     font-weight: 700;
   }
-
+  
   .titles h2 {
     font-size: 40px;
     font-weight: 500;
   }
-
+  
   .skills::after {
     width: 100%;
   }
-
+  
   ul.competences:first-child {
     margin-left: 0;
   }
-
+  
   .competences { margin-left: 90px; }
-
+  
   .work-list {
     max-width: 1300px;
     justify-content: center;
   }
-
+  
   .work-list-item {
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  
   .work-img {
     width: 100%;
   }
-
+  
   .work-list-item:first-child {
     max-width: 1200px;
     flex-wrap: wrap;
@@ -413,32 +421,53 @@ textarea {
   }
 }
 
+@media screen and (max-width: 500px) {
+  form div {
+    flex-direction: column !important;
+  }
+  .name-email {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 708px) {
+  .name-email {
+    max-width: 329px;
+  }
+
+  form div {
+    justify-content: space-between;
+    align-items: space-between;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .titles h1 {
     font-size: 90px;
   }
-
+  
   .work-list {
     justify-content: normal;
   }
-
+  
   .work-list-item {
     max-width: 1200px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 88px;
   }
-
+  
   .work-img {
     max-width: 684px;
     margin-right: 36px;
   }
-
+  
   .work-list-item:nth-child(3),
   .work-list-item:last-child {
     flex-direction: row-reverse;
   }
-
+  
   .work-list-item:nth-child(3) .work-img,
   .work-list-item:last-child .work-img {
     margin-right: 0;
