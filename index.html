@@ -19,6 +19,12 @@
 	<!-- the page's header -->
 	<header class="pg-hdr">
 		<h3>John Doe</h3>
+		<nav class="dsk-btn">
+			<a href="#">Portofolio</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#"><img src="./images/buttons/Union.svg" alt=""></a>
+		</nav> 
 		<nav class="btn">
 			<img src="./images/buttons/hamburger.svg" alt="menu-pic" >
 		</nav>
@@ -41,7 +47,7 @@
 			<div class="skills">
 				<ul class="competences cmps-1">
           <li class="cmp-ttl"><h3>Languages</h3></li>
-          <li class="competence">JavaScript(ES5/ES6)</li>
+          <li class="competence">JavaScript</li>
           <li class="competence">Ruby</li>
           <li class="competence">HTML</li>
           <li class="competence">CSS</li>
@@ -68,6 +74,8 @@
 
 			<!-- Socials -->
 			<div class="join">
+				<!--Transition to work section -->
+				<button type="button" class="btn-work"><span>Work</span> <img src="./images/buttons/down_arrow.svg" alt="">  </button>
 				<ul class="Socials">
 					<li><a href="#" class="social"> <img src="./images/buttons/github.svg" alt="Github-pic" /></a></li>
 					<li><a href="#" class="social"> <img src="./images/buttons/linkedin.svg" alt="linkedin-pic" /></a></li>
@@ -75,41 +83,16 @@
 					<li>  <a href="#" class="social"> <img src="./images/buttons/twitter.svg" alt="twitter-pic" /></a></li>
 					<li><a href="#" class="social"> <img src="./images/buttons/medium.svg" alt="medium-pic" /></a></li>
 				</ul>
+				<!--Transition to work section -->
+				<button type="button" class="btn-work"> <img src="./images/buttons/down_arrow.svg" alt=""> <span>Work</span> </button>
 			</div>
 
-			 <!--Transition to work section -->
-			 <button type="button" class="btn-work"> <img src="./images/buttons/down_arrow.svg" alt=""> <span>Work</span> </button>
 		</section>
 		
 		<section id="sct2" class="section">
 		  <ul class="work-list">
 		    <li class="work-list-item">
 					<h2 class="recent-work">My recent work</h2>
-				</li>
-
-				<li class="work-list-item">
-					<img src="./images/photos/Img_Placeholder.png" alt="work image" class="work-img">
-
-					<div class="block">
-						<h3>Multi-Post Stories</h3>
-						<p class="work-para">
-							A daily selection of privately personalized reads; no 
-							accounts or sign-ups required. has been the industry's 
-							standard dummy text ever since the 1500s, 
-							when an unknown printer took a standard dummy text.
-						</p>
-
-						<ul class="techs">
-							<li class="tech">css</li>
-							<li class="tech">html</li>
-							<li class="tech">bootstrap</li>
-							<li class="tech">ruby</li>
-						</ul>
-
-						<button type="button" class="see-project">
-							see project
-						</button>
-					</div>
 				</li>
 
 				<li class="work-list-item">
@@ -218,7 +201,7 @@
 	<!-- The footer with the form and social links -->
 	<footer class="footer">
 		<div class="ttl-para">
-			<h2 class="contact-us">contact us</h2>
+			<h2 class="contact-us">Let's chat</h2>
 			<p class="para ftr-para">
 				If you have an application you are interested in developing, 
 				a feature that you need built or a project that needs coding. I’d love to help with it 
@@ -238,7 +221,7 @@
 			<textarea name="message" class="message" maxlength="500" placeholder="Enter text here." required></textarea>
 
 			<button type="submit" class="see-project">
-				see project
+				Send
 			</button>
 		</form>
 

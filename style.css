@@ -21,20 +21,32 @@ body {
 }
 
 .pg-hdr {
-  width: 375px;
+  width: 100%;
+  height: 72px;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 47px;
-  padding: 24px;
+  padding: 0 24px;
+  max-width: 1156px;
+}
+
+.dsk-btn {
+  display: none;
+  width: 100%;
+  max-width: 297px;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 #main {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
+  align-items: center;
 }
 
 .section { /* global style for sections */
@@ -99,7 +111,7 @@ body {
   margin-bottom: 65px;
 }
 
-.competences { margin-left: 43px; }
+.competences { margin-left: 55px; }
 
 .cmp-ttl { margin-bottom: 24px; }
 
@@ -123,7 +135,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 28px;
 }
 
 .Socials {
@@ -133,13 +144,18 @@ body {
   justify-content: space-between;
 }
 
-/* Transition button */
 .btn-work {
+  margin-top: 36px;
   width: 77px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Transition button */
+.btn-work:first-child {
+  display: none;
 }
 
 /* Work section */
@@ -154,7 +170,7 @@ body {
 }
 
 .work-list-item {
-  width: 100%;
+  max-width: 470px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -162,12 +178,12 @@ body {
 }
 
 .work-img {
-  width: 327px;
+  max-width: 470px;
   height: auto;
 }
 
 .block {
-  width: 100%;
+  max-width: 470px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -183,7 +199,7 @@ body {
 }
 
 .work-para {
-  width: 100%;
+  max-width: 470px;
   font-size: 20px;
   font-weight: 400;
   color: #dcdce8;
@@ -192,7 +208,7 @@ body {
 }
 
 .techs {
-  width: 100%;
+  max-width: 302px;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -229,7 +245,10 @@ body {
 
 .see-project:hover {
   box-shadow: 0 0 5px #7d73fc;
-  border: 1px solid white;
+}
+
+.see-project:active {
+  background-color: #5e42d7;
 }
 
 .recent-work {
@@ -250,15 +269,16 @@ body {
 
 /* The footer with the form and social links */
 .footer {
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: auto;
   margin-top: 80px;
+  align-items: center;
 }
 
 .ttl-para {
-  width: 100%;
+  max-width: 684px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -291,8 +311,8 @@ form {
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 0 24px 71px 24px;
   margin-bottom: 25px;
   border-bottom: 2px solid #3a3837;
@@ -312,6 +332,12 @@ textarea {
   padding-inline-start: 18px;
 }
 
+form div {
+  width: 100%;
+  max-width: 684px;
+  display: flex;
+}
+
 .name-email {
   width: 100%;
   height: 48px;
@@ -328,6 +354,7 @@ textarea {
 
 .message {
   width: 100%;
+  max-width: 684px;
   height: 148px;
   resize: none;
   padding-block-start: 18px;
@@ -360,4 +387,158 @@ textarea {
   margin-top: 27px;
   margin-bottom: 8px;
   border-radius: 15%;
+}
+
+@media screen and (min-width: 414px) {
+  #sct1 .para {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  #sct1 {
+    max-width: 1023px;
+  }
+
+  .skills {
+    max-width: 427px;
+  }
+
+  .join {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-work {
+    margin-top: 0;
+  }
+
+  .btn-work:first-child {
+    display: flex;
+  }
+
+  .titles h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  .titles h2 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .skills::after {
+    width: 100%;
+  }
+
+  ul.competences:first-child {
+    margin-left: 0;
+  }
+
+  .competences { margin-left: 90px; }
+
+  .work-list {
+    max-width: 1300px;
+    justify-content: center;
+  }
+
+  .work-list-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .work-img {
+    width: 100%;
+  }
+
+  .work-list-item:first-child {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .contact-us {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .see-project {
+    font-size: 15px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .ftr-join::after {
+    display: none;
+  }
+
+  .ftr-join {
+    flex-direction: row;
+    max-width: 421px;
+    margin-bottom: 21px;
+    height: 40px;
+  }
+
+  .my-mail { margin-top: 0; }
+}
+
+@media screen and (max-width: 500px) {
+  form div {
+    flex-direction: column !important;
+  }
+
+  .name-email {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 708px) {
+  .name-email {
+    max-width: 329px;
+  }
+
+  form div {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .btn {
+    display: none;
+  }
+
+  .dsk-btn {
+    display: flex;
+  }
+
+  .titles h1 {
+    font-size: 90px;
+  }
+
+  .work-list {
+    justify-content: normal;
+  }
+
+  .work-list-item {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 88px;
+  }
+
+  .work-img {
+    max-width: 684px;
+    margin-right: 36px;
+  }
+
+  .work-list-item:nth-child(3),
+  .work-list-item:last-child {
+    flex-direction: row-reverse;
+  }
+
+  .work-list-item:nth-child(3) .work-img,
+  .work-list-item:last-child .work-img {
+    margin-right: 0;
+    margin-left: 36px;
+  }
 }
