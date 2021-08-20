@@ -247,6 +247,10 @@ body {
   box-shadow: 0 0 5px #7d73fc;
 }
 
+.see-project:active {
+  background-color: #5e42d7;
+}
+
 .recent-work {
   font-size: 40px;
   font-weight: 500;
