@@ -420,6 +420,16 @@ form div {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
+  .contact-us {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .see-project {
+    font-size: 15px;
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 500px) {
