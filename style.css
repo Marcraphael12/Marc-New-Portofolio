@@ -318,7 +318,6 @@ form div {
   width: 100%;
   max-width: 684px;
   display: flex;
-
 }
 
 .name-email {
@@ -376,45 +375,45 @@ form div {
   #sct1 .para {
     width: 100%;
   }
-  
+
   #sct1 {
     max-width: 447px;
   }
-  
+
   .titles h1 {
     font-size: 70px;
     font-weight: 700;
   }
-  
+
   .titles h2 {
     font-size: 40px;
     font-weight: 500;
   }
-  
+
   .skills::after {
     width: 100%;
   }
-  
+
   ul.competences:first-child {
     margin-left: 0;
   }
-  
+
   .competences { margin-left: 90px; }
   
   .work-list {
     max-width: 1300px;
     justify-content: center;
   }
-  
+
   .work-list-item {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .work-img {
     width: 100%;
   }
-  
+
   .work-list-item:first-child {
     max-width: 1200px;
     flex-wrap: wrap;
@@ -456,7 +455,6 @@ form div {
   }
 }
 
-
 @media screen and (min-width: 708px) {
   .name-email {
     max-width: 329px;
@@ -464,7 +462,6 @@ form div {
 
   form div {
     justify-content: space-between;
-    align-items: space-between;
   }
 }
 
@@ -472,28 +469,28 @@ form div {
   .titles h1 {
     font-size: 90px;
   }
-  
+
   .work-list {
     justify-content: normal;
   }
-  
+
   .work-list-item {
     max-width: 1200px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-top: 88px;
   }
-  
+
   .work-img {
     max-width: 684px;
     margin-right: 36px;
   }
-  
+
   .work-list-item:nth-child(3),
   .work-list-item:last-child {
     flex-direction: row-reverse;
   }
-  
+
   .work-list-item:nth-child(3) .work-img,
   .work-list-item:last-child .work-img {
     margin-right: 0;
