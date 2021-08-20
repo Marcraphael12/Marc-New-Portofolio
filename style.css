@@ -135,6 +135,7 @@ body {
 
 /* Transition button */
 .btn-work {
+  margin-top: 36px;
   width: 77px;
   height: 40px;
   display: flex;
