@@ -134,6 +134,9 @@ body {
 }
 
 /* Transition button */
+.btn-work:first-child {
+  display: none;
+}
 .btn-work {
   margin-top: 36px;
   width: 77px;
@@ -374,10 +377,28 @@ form div {
 @media screen and (min-width: 414px) {
   #sct1 .para {
     width: 100%;
+    max-width: 448px;
   }
 
   #sct1 {
-    max-width: 447px;
+    max-width: 1023px;
+  }
+
+  .skills {
+    max-width: 427px;
+  }
+
+  .join {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-work {
+    margin-top: 0;
+  }
+
+  .btn-work:first-child {
+    display: flex;
   }
 
   .titles h1 {
