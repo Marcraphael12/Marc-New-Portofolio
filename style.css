@@ -499,7 +499,7 @@ form div {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   .btn {
     display: none;
   }
