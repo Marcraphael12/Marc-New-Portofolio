@@ -432,6 +432,21 @@ form div {
   }
 }
 
+@media screen and (min-width: 450px) {
+  .ftr-join::after {
+    display: none;
+  }
+  
+  .ftr-join {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 421px;
+    align-items: center;
+  }
+
+  .my-mail { margin-top: 0; }
+}
+
 @media screen and (max-width: 500px) {
   form div {
     flex-direction: column !important;
