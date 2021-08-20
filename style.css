@@ -256,6 +256,7 @@ body {
   flex-direction: column;
   height: auto;
   margin-top: 80px;
+  align-items: center;
 }
 
 .ttl-para {
