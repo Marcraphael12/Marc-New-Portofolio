@@ -133,10 +133,6 @@ body {
   justify-content: space-between;
 }
 
-/* Transition button */
-.btn-work:first-child {
-  display: none;
-}
 .btn-work {
   margin-top: 36px;
   width: 77px;
@@ -144,6 +140,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Transition button */
+.btn-work:first-child {
+  display: none;
 }
 
 /* Work section */
