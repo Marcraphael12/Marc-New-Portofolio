@@ -41,6 +41,12 @@ body {
   font-weight: 500;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #main {
   width: 100%;
   display: flex;
