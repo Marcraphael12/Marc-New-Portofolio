@@ -30,6 +30,10 @@ function open() {
   flex-direction: column;\
   justify-content: start;');
 
+  navBar.setAttribute('style', '\
+  display: flex;\
+  flex-direction: column;')
+
   logo.setAttribute('style', 'display: none;');
 
   btn.setAttribute('style', 'display: none');
