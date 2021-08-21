@@ -1,6 +1,7 @@
 /* eslint-disable no-multi-str */
 const hdr = document.querySelector('.pg-hdr'); // the header element
 const btn = document.querySelector('.btn'); // the opening button
+const logo = document.querySelector('.pg-hdr h3');
 
 /** ******* The closig button *********** */
 const cross = document.createElement('button');
@@ -8,7 +9,7 @@ cross.setAttribute('style', '\
 width: max-content;\
 background: none;\
 font-weight: 500;\
-font-size: 20px;\
+font-size: 24px;\
 border: none;\
 cursor: pointer;');
 cross.innerHTML = '&times;';
@@ -20,9 +21,12 @@ function open() {
   width: 100%;\
   margin-top: 0;\
   position: fixed;\
-  background-color: blue;\
-  flex-direction: column-reverse;\
-  justify-content: flex-end;');
+  padding: 40px;\
+  background-color: #191765;\
+  flex-direction: column;\
+  justify-content: start;');
+
+  logo.setAttribute('style', 'display: none;');
 
   btn.setAttribute('style', 'display: none');
 
@@ -36,6 +40,7 @@ function close() {
   hdr.removeAttribute('style'); // remove the style attribute
   btn.removeAttribute('style'); // remove the style attribute
   hdr.removeChild(cross); // remove cross from header
+  logo.removeAttribute('style') // remove the style attribute
 }
 
 cross.addEventListener('click', close); // calling the closing function and reset the header
