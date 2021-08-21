@@ -2,7 +2,7 @@
 const hdr = document.querySelector('.pg-hdr'); // the header element
 const btn = document.querySelector('.btn'); // the opening button
 const logo = document.querySelector('.pg-hdr h3');
-const navBar = document.querySelector('.dsk-btn')
+const navBar = document.querySelector('.dsk-btn');
 const navLinks = document.querySelectorAll('.nav-link');
 const rightArrow = document.querySelectorAll('r-arrow');
 
@@ -54,6 +54,7 @@ function close() {
   btn.removeAttribute('style'); // remove the style attribute
   hdr.removeChild(cross); // remove cross from header
   logo.removeAttribute('style') // remove the style attribute
+  navBar.removeAttribute('style')
 }
 
 cross.addEventListener('click', close); // calling the closing function and reset the header
