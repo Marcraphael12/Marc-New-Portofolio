@@ -5,6 +5,7 @@ const logo = document.querySelector('.pg-hdr h3');
 const navBar = document.querySelector('.dsk-btn');
 const navLinks = document.querySelectorAll('.nav-link');
 const rightArrow = document.querySelectorAll('r-arrow');
+const navIcon = document.querySelector('.nav-icon')
 
 /** ******* The closig button *********** */
 const cross = document.createElement('button');
@@ -40,6 +41,8 @@ function open() {
   font-size: 24px;\
   padding: 16px 15px')
 
+  navIcon.setAttribute('style', 'display: none;')
+
   logo.setAttribute('style', 'display: none;');
 
   btn.setAttribute('style', 'display: none');
@@ -56,6 +59,7 @@ function close() {
   hdr.removeChild(cross); // remove cross from header
   logo.removeAttribute('style') // remove the style attribute
   navBar.removeAttribute('style')
+  navIcon.removeAttribute('style')
 }
 
 cross.addEventListener('click', close); // calling the closing function and reset the header
