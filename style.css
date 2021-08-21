@@ -47,6 +47,10 @@ body {
   justify-content: space-between;
 }
 
+.r-arrow {
+  display: none;
+}
+
 #main {
   width: 100%;
   display: flex;
