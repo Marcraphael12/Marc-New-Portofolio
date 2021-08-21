@@ -9,8 +9,9 @@ cross.setAttribute('style', '\
 width: max-content;\
 background: none;\
 font-weight: 500;\
-font-size: 24px;\
+font-size: 38px;\
 border: none;\
+align-self: end;\
 cursor: pointer;');
 cross.innerHTML = '&times;';
 
