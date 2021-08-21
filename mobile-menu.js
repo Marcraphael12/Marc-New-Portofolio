@@ -27,8 +27,9 @@ function open() {
   position: fixed;\
   padding: 40px;\
   background-color: #191765;\
-  flex-direction: column;\
-  justify-content: start;');
+  flex-direction: column-reverse;\
+  justify-content: start;\
+  align-items: initial;');
 
   navBar.setAttribute('style', '\
   display: flex;\
