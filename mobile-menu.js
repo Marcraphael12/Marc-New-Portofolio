@@ -32,7 +32,10 @@ function open() {
 
   navBar.setAttribute('style', '\
   display: flex;\
-  flex-direction: column;')
+  flex-direction: column;\
+  width: 100%;\
+  max-width: 327px;\
+  height: 184px;')
 
   logo.setAttribute('style', 'display: none;');
 
