@@ -35,7 +35,8 @@ function open() {
   flex-direction: column;\
   width: 100%;\
   max-width: 327px;\
-  height: 184px;')
+  height: 184px;\
+  font-size: 24px;')
 
   logo.setAttribute('style', 'display: none;');
 
