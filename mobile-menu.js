@@ -39,7 +39,8 @@ function open() {
   max-width: 100%;\
   height: 184px;\
   font-size: 24px;\
-  padding: 16px 15px')
+  padding: 16px 15px;\
+  margin-top: 18px;')
 
   navIcon.setAttribute('style', 'display: none;')
 
