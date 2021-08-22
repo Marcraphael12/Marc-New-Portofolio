@@ -1,4 +1,5 @@
 /* eslint-disable no-multi-str */
+/* eslint-disable no-plusplus */
 const hdr = document.querySelector('.pg-hdr'); // the header element
 const btn = document.querySelector('.btn'); // the opening button
 const logo = document.querySelector('.pg-hdr h3');
@@ -40,9 +41,9 @@ function open() {
   height: 184px;\
   font-size: 24px;\
   padding: 16px 15px;\
-  margin-top: 18px;')
+  margin-top: 18px;');
 
-  navIcon.setAttribute('style', 'display: none;')
+  navIcon.setAttribute('style', 'display: none;');
 
   logo.setAttribute('style', 'display: none;');
 
@@ -51,7 +52,7 @@ function open() {
   hdr.appendChild(cross); // add cross to the header
 
   for (let i = 0; i < rightArrow.length; i++) {
-    rightArrow[i].setAttribute('style', 'display: initial;')
+    rightArrow[i].setAttribute('style', 'display: initial;');
   }
 }
 
@@ -62,12 +63,12 @@ function close() {
   hdr.removeAttribute('style'); // remove the style attribute
   btn.removeAttribute('style'); // remove the style attribute
   hdr.removeChild(cross); // remove cross from header
-  logo.removeAttribute('style') // remove the style attribute
-  navBar.removeAttribute('style')
-  navIcon.removeAttribute('style')
+  logo.removeAttribute('style'); // remove the style attribute
+  navBar.removeAttribute('style');
+  navIcon.removeAttribute('style');
 
   for (let i = 0; i < rightArrow.length; i++) {
-    rightArrow[i].removeAttribute('style')
+    rightArrow[i].removeAttribute('style');
   }
 }
 
