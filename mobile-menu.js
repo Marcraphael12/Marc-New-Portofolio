@@ -6,7 +6,7 @@ const logo = document.querySelector('.pg-hdr h3');
 const navBar = document.querySelector('.dsk-btn');
 const navLinks = document.querySelectorAll('.nav-link');
 const rightArrow = document.querySelectorAll('.r-arrow');
-const navIcon = document.querySelector('.nav-icon')
+const navIcon = document.querySelector('.nav-icon');
 
 /** ******* The closig button *********** */
 const cross = document.createElement('button');
