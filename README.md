@@ -6,11 +6,11 @@
 
 ![mobile](./images/mobile.png)
 
-in this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby ... etc. I hope you will be satisfied with the work accomplished!
+in this portofolio you will see all the projects that I have already done, with various programming languages such as: JavaScript, HTML & CSS, Ruby... etc. I hope you will be satisfied with the work accomplished!
 
 ## Built With
 
-- Major languages : HTML/CSS;
+- Major languages : HTML/CSS, JavaScript;
 - IDE : VisualStudio Code, Atom;
 - Web Browsers : Firefox, Google Chrome;
 
