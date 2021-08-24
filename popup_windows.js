@@ -32,5 +32,5 @@ function openProject() { // open the modal
   document.body.appendChild(modal);
 }
 for (let i = 0; i < prjt.length-1; i++) {
-	prjt[i].addEventListener('click', openProject)
+  prjt[i].addEventListener('click', openProject);
 }
