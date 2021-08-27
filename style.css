@@ -87,13 +87,13 @@ body {
   animation-iteration-count: infinite;
 }
 
-/*@keyframes color {
+@keyframes color {
 	0% {color: white;}
 	25% {color: #46f0f0;}
 	50% {color: #3bc4c4;}
 	75% {color: #30a6a6;}
 	100% {color: #7d73fc;}
-}*/
+}
 
 .titles h2 {
   font-size: 32px;
