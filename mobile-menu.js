@@ -76,4 +76,4 @@ for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('click', close); // Use nav links to close the the mobile menu
 }
 
-cross.addEventListener('click', close); // calling the closing function and reset the header
+cross.addE, close); // calling the closing function and reset the headerventListener('click'
