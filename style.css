@@ -8,6 +8,12 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3 {
+  transition: font-size 1s;
+}
+
 button {
   background: none;
   border: none;
@@ -75,6 +81,18 @@ body {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 30px;
+  animation-name: color;
+  animation-duration: 5s;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% { color: white; }
+  25% { color: #46f0f0; }
+  50% { color: #3bc4c4; }
+  75% { color: #30a6a6; }
+  100% { color: #7d73fc; }
 }
 
 .titles h2 {
@@ -92,6 +110,7 @@ body {
   border-bottom: 2px solid #646369;
   padding-bottom: 33px;
   margin-bottom: 37px;
+  transition: all 2s;
 }
 
 /* Soft Skills */
@@ -111,7 +130,10 @@ body {
   margin-bottom: 65px;
 }
 
-.competences { margin-left: 55px; }
+.competences {
+  margin-left: 55px;
+  transition: all 1s;
+}
 
 .cmp-ttl { margin-bottom: 24px; }
 
@@ -180,6 +202,7 @@ body {
 .work-img {
   max-width: 470px;
   height: auto;
+  transition: max-width 3s;
 }
 
 .block {
@@ -241,10 +264,11 @@ body {
   font-size: 12px;
   font-weight: 500;
   text-transform: capitalize;
+  transition: all 0.5s;
 }
 
 .see-project:hover {
-  box-shadow: 0 0 5px #7d73fc;
+  box-shadow: 0 0 10px #7d73fc;
 }
 
 .see-project:active {
