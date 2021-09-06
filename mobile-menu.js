@@ -26,15 +26,7 @@ function open() {
   justify-content: start;\
   align-items: initial;');
 
-  navBar.setAttribute('style', '\
-  display: flex;\
-  flex-direction: column;\
-  width: 100%;\
-  max-width: 100%;\
-  height: 184px;\
-  font-size: 24px;\
-  padding: 16px 15px;\
-  margin-top: 18px;');
+  navBar.classList.add('mobile-nav');
 
   navIcon.setAttribute('style', 'display: none;');
 
