@@ -26,7 +26,7 @@ function open() {
   justify-content: start;\
   align-items: initial;');
 
-  navBar.classList.add('mobile-nav');
+  navBar.classList.toggle('mobile-nav');
 
   navIcon.setAttribute('style', 'display: none;');
 
@@ -49,7 +49,7 @@ function close() { // Reseting the header to the original
   btn.removeAttribute('style');
   hdr.removeChild(cross);
   logo.removeAttribute('style');
-  navBar.removeAttribute('style');
+  navBar.classList.remove('mobile-nav');
   navIcon.removeAttribute('style');
 
   for (let i = 0; i < rightArrow.length; i++) {
