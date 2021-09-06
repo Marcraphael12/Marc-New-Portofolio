@@ -620,3 +620,11 @@ aside {
 	position: absolute;
 	background: rebeccapurple/*#191765*/;
 }
+
+.close-project {
+	width: max-content;
+  background: none;
+  font-weight: 500;
+  font-size: 38px;
+  border: none;
+}
