@@ -8,7 +8,8 @@ const openProject = document.querySelectorAll('.see-project');
 const closeProject = document.createElement('button');
 
 const image = {
-  source: './images/photos/project_img.png'
+  imgDesktop: './images/photos/project_img.png',
+  imgMobile: './images/photos/project_img_smal.png'
 }
 
 const text = {
@@ -44,12 +45,29 @@ title.appendChild(h1);
 title.appendChild(closeProject);
 
 const popupImage = document.createElement('img');
-popupImage.setAttribute('src', image.source);
 popupImage.classList.add('popup-image');
 
+const popupText = document.createElement('p');
+popupText.classList.add('popup-text');
+
+function switchText(e) {
+  if (e.matches) { // If media query matches
+    popupText.innerHTML = text.txtMobile;
+    popupImage.setAttribute('src', image.imgMobile);
+  } else {
+    popupText.innerHTML = text.txtDesktop;
+    popupImage.setAttribute('src', image.imgDesktop);
+  }
+}
+
+let media = window.matchMedia("(max-width: 600px)");
+switchText(media);
+media.addListener(switchText);
+
 container.classList.add('project-card');
-container.appendChild(title)
-container.appendChild(popupImage)
+container.appendChild(title);
+container.appendChild(popupImage);
+container.appendChild(popupText);
 
 for (var i = 0; i < openProject.length; i++) {
   openProject[i].addEventListener('click', () => {
