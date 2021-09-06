@@ -634,6 +634,7 @@ aside {
 
 .project-card {
 	width: 90%;
+	max-width: 1108px;
 	height: 93%;
 	border: 1px solid white;
 	padding: 24px;
@@ -651,13 +652,19 @@ aside {
 .title {
 	font-size: 20px;
 	font-weight: 500;
-	color: white;
 	width: max-content;
 	height: auto;
 }
 
 .popup-image {
 	width: 100%;
-	max-width: 1108px;
+	height: auto;
+}
+
+.popup-text {
+	font-size: 16px;
+	text-align: center;
+	width: 100%;
+	max-width: 684px;
 	height: auto;
 }
