@@ -13,17 +13,22 @@ const cross = document.createElement('button'); // The cross button to close mob
 cross.classList.add('closing-button');
 cross.innerHTML = '&times;';
 
+function removed(e) {
+  e.style.display = 'none';
+}
+
+function displayed(e) {
+  e.style.display = 'initial';
+}
+
 /** ********* The opening function ************** */
 function open() {
   hdr.classList.toggle('mobile-header');
-
   navBar.classList.toggle('mobile-nav');
 
-  navIcon.setAttribute('style', 'display: none;');
-
-  logo.setAttribute('style', 'display: none;');
-
-  btn.setAttribute('style', 'display: none');
+  removed(navIcon);
+  removed(logo);
+  removed(btn);
 
   hdr.appendChild(cross); // add cross to the header
 
@@ -37,11 +42,12 @@ btn.addEventListener('click', open); // calling the opening function
 /** *********** The closing function *************** */
 function close() { // Reseting the header to the original
   hdr.classList.remove('mobile-header');
-  btn.removeAttribute('style');
-  hdr.removeChild(cross);
-  logo.removeAttribute('style');
   navBar.classList.remove('mobile-nav');
-  navIcon.removeAttribute('style');
+  hdr.removeChild(cross);
+  
+  displayed(btn);
+  displayed(logo);
+  displayed(navIcon);
 
   for (let i = 0; i < rightArrow.length; i++) {
     rightArrow[i].style.display = 'none';
