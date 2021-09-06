@@ -2,14 +2,14 @@
 /* eslint-disable no-plusplus */
 const hdr = document.querySelector('.pg-hdr'); // the header element
 const btn = document.querySelector('.btn'); // the opening button
-const logo = document.querySelector('.pg-hdr h3');
-const navBar = document.querySelector('.dsk-btn');
-const navLinks = document.querySelectorAll('.nav-link');
-const rightArrow = document.querySelectorAll('.r-arrow');
-const navIcon = document.querySelector('.nav-icon');
+const logo = document.querySelector('.pg-hdr h3'); // The logo name
+const navBar = document.querySelector('.dsk-btn'); // The desktop navigation bar
+const navLinks = document.querySelectorAll('.nav-link'); // The navigation links inside the nav bar
+const rightArrow = document.querySelectorAll('.r-arrow'); // The right arrow after the nav links
+const navIcon = document.querySelector('.nav-icon'); // The mail icon
 
 /** ******* The closig button *********** */
-const cross = document.createElement('button');
+const cross = document.createElement('button'); // The cross button to close mobile menu
 cross.setAttribute('style', '\
 width: max-content;\
 background: none;\
@@ -51,7 +51,7 @@ function open() {
 
   hdr.appendChild(cross); // add cross to the header
 
-  for (let i = 0; i < rightArrow.length; i++) {
+  for (let i = 0; i < rightArrow.length; i++) { // Add the right arrow to every nav link
     rightArrow[i].setAttribute('style', 'display: initial;');
   }
 }
@@ -59,11 +59,11 @@ function open() {
 btn.addEventListener('click', open); // calling the opening function
 
 /** *********** The closing function *************** */
-function close() {
-  hdr.removeAttribute('style'); // remove the style attribute
-  btn.removeAttribute('style'); // remove the style attribute
-  hdr.removeChild(cross); // remove cross from header
-  logo.removeAttribute('style'); // remove the style attribute
+function close() { // Reseting the header to the original
+  hdr.removeAttribute('style');
+  btn.removeAttribute('style');
+  hdr.removeChild(cross);
+  logo.removeAttribute('style');
   navBar.removeAttribute('style');
   navIcon.removeAttribute('style');
 
