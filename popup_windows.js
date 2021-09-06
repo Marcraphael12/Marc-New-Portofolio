@@ -1,3 +1,6 @@
+/* eslint-disable no-multi-str */
+/* eslint-disable no-plusplus */
+
 /* See project's button */
 const prjt = document.querySelectorAll('.see-project');
 
