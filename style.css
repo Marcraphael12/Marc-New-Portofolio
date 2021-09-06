@@ -613,3 +613,10 @@ form div {
 }
 
 /* This part is only for the popup_windows */
+aside {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	background: rebeccapurple/*#191765*/;
+}
