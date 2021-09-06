@@ -614,18 +614,18 @@ form div {
 
 /* This part is only for the popup_windows */
 aside {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	position: absolute;
-	background: rgba(27, 23, 102, 0.95);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background: rgba(27, 23, 102, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close-project {
-	width: max-content;
+  width: max-content;
   background: none;
   font-weight: 300;
   font-size: 38px;
@@ -633,38 +633,51 @@ aside {
 }
 
 .project-card {
-	width: 90%;
-	max-width: 1108px;
-	height: 93%;
-	border: 1px solid white;
-	padding: 24px;
-	background: rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 1108px;
+  height: auto;
+  border: 1px solid white;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .popup-title {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	height: auto;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 
 .title {
-	font-size: 20px;
-	font-weight: 500;
-	width: max-content;
-	height: auto;
+  font-size: 20px;
+  font-weight: 500;
+  width: max-content;
+  height: auto;
 }
 
 .popup-image {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .popup-text {
-	font-size: 16px;
-	text-align: center;
-	width: 100%;
-	max-width: 684px;
-	height: auto;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 684px;
+  height: auto;
+}
+
+.popup-techs {
+  width: max-content;
+  border-left: 2px solid #646369;
+}
+
+.popup-tech {
+  width: max-content;
+  padding: 0 14px;
 }
