@@ -15,16 +15,7 @@ cross.innerHTML = '&times;';
 
 /** ********* The opening function ************** */
 function open() {
-  hdr.setAttribute('style', '\
-  height: 100vh;\
-  width: 100%;\
-  margin-top: 0;\
-  position: fixed;\
-  padding: 40px;\
-  background-color: #191765;\
-  flex-direction: column-reverse;\
-  justify-content: start;\
-  align-items: initial;');
+  hdr.classList.toggle('mobile-header');
 
   navBar.classList.toggle('mobile-nav');
 
@@ -45,7 +36,7 @@ btn.addEventListener('click', open); // calling the opening function
 
 /** *********** The closing function *************** */
 function close() { // Reseting the header to the original
-  hdr.removeAttribute('style');
+  hdr.classList.remove('pd-hdr');
   btn.removeAttribute('style');
   hdr.removeChild(cross);
   logo.removeAttribute('style');
