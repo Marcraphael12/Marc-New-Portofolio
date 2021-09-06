@@ -655,3 +655,9 @@ aside {
 	width: max-content;
 	height: auto;
 }
+
+.popup-image {
+	width: 100%;
+	max-width: 1108px;
+	height: auto;
+}
