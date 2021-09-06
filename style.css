@@ -47,6 +47,16 @@ body {
   font-weight: 500;
 }
 
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.r-arrow {
+  display: none;
+}
+
 #main {
   width: 100%;
   display: flex;
@@ -565,4 +575,39 @@ form div {
     margin-right: 0;
     margin-left: 36px;
   }
+}
+
+/* This part is only for mobile menu */
+.closing-button {
+  width: max-content;
+  background: none;
+  font-weight: 500;
+  font-size: 38px;
+  border: none;
+  align-self: end;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  height: 184px;
+  font-size: 24px;
+  padding: 16px 15px;
+  margin-top: 18px;
+}
+
+.mobile-header {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  padding: 40px;
+  background-color: #191765;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: initial;
 }
