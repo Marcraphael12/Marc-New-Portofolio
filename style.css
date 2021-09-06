@@ -574,3 +574,16 @@ form div {
   padding: 16px 15px;
   margin-top: 18px;
 }
+
+.mobile-header {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0;
+  position: fixed;
+  padding: 40px;
+  background-color: #191765;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: initial;
+}
