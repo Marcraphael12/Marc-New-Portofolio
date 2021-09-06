@@ -12,8 +12,12 @@ const closeProject = document.createElement('button');
 closeProject.innerHTML = '&times;';
 closeProject.classList.add('close-project');
 
+const h1 = document.createElement('h1');
+h1.innerHTML = 'Multi - Post stories'
+
 title.classList.add('popup-title');
-title.appendChild(closeProject)
+title.appendChild(h1);
+title.appendChild(closeProject);
 
 container.classList.add('project-card');
 container.appendChild(title)

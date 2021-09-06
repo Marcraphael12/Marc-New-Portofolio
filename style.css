@@ -618,21 +618,26 @@ aside {
 	height: 100%;
 	top: 0;
 	position: absolute;
-	background: rebeccapurple/*#191765*/;
+	background: rgba(27, 23, 102, 0.95);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .close-project {
 	width: max-content;
   background: none;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 38px;
   border: none;
 }
 
 .project-card {
 	width: 90%;
-	height: 80%;
+	height: 93%;
 	border: 1px solid white;
+	padding: 24px;
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .popup-title {
@@ -641,4 +646,12 @@ aside {
 	width: 100%;
 	height: auto;
 	align-items: center;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	width: max-content;
+	height: auto;
 }
