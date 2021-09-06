@@ -44,7 +44,7 @@ function close() { // Reseting the header to the original
   hdr.classList.remove('mobile-header');
   navBar.classList.remove('mobile-nav');
   hdr.removeChild(cross);
-  
+
   displayed(btn);
   displayed(logo);
   displayed(navIcon);
