@@ -10,14 +10,7 @@ const navIcon = document.querySelector('.nav-icon'); // The mail icon
 
 /** ******* The closig button *********** */
 const cross = document.createElement('button'); // The cross button to close mobile menu
-cross.setAttribute('style', '\
-width: max-content;\
-background: none;\
-font-weight: 500;\
-font-size: 38px;\
-border: none;\
-align-self: end;\
-cursor: pointer;');
+cross.classList.add('closing-button');
 cross.innerHTML = '&times;';
 
 /** ********* The opening function ************** */
