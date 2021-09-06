@@ -552,3 +552,14 @@ form div {
     margin-left: 36px;
   }
 }
+
+/* This part is only for mobile menu */
+.closing-button {
+  width: max-content;
+  background: none;
+  font-weight: 500;
+  font-size: 38px;
+  border: none;
+  align-self: end;
+  cursor: pointer;
+}
