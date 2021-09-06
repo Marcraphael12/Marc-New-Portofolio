@@ -628,3 +628,17 @@ aside {
   font-size: 38px;
   border: none;
 }
+
+.project-card {
+	width: 90%;
+	height: 80%;
+	border: 1px solid white;
+}
+
+.popup-title {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
