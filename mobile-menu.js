@@ -28,7 +28,7 @@ function open() {
   hdr.appendChild(cross); // add cross to the header
 
   for (let i = 0; i < rightArrow.length; i++) { // Add the right arrow to every nav link
-    rightArrow[i].setAttribute('style', 'display: initial;');
+    rightArrow[i].style.display = 'initial';
   }
 }
 
@@ -36,7 +36,7 @@ btn.addEventListener('click', open); // calling the opening function
 
 /** *********** The closing function *************** */
 function close() { // Reseting the header to the original
-  hdr.classList.remove('pd-hdr');
+  hdr.classList.remove('mobile-header');
   btn.removeAttribute('style');
   hdr.removeChild(cross);
   logo.removeAttribute('style');
@@ -44,7 +44,7 @@ function close() { // Reseting the header to the original
   navIcon.removeAttribute('style');
 
   for (let i = 0; i < rightArrow.length; i++) {
-    rightArrow[i].removeAttribute('style');
+    rightArrow[i].style.display = 'none';
   }
 }
 
