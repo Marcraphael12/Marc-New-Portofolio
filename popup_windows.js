@@ -12,7 +12,7 @@ const sct2 = document.querySelector('#stc2');
 const image = {
   imgDesktop: './images/photos/project_img.png',
   imgMobile: './images/photos/project_img_smal.png',
-}
+};
 
 const text = {
   txtDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
