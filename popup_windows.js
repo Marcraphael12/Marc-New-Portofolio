@@ -75,6 +75,25 @@ technologies.appendChild(technologie2);
 technologies.appendChild(technologie3);
 technologies.appendChild(technologie4);
 
+const seeLive = document.createElement('button');
+seeLive.innerHTML = 'See live';
+seeLive.classList.add('see-project', 'popup-button');
+const live = document.createElement('img');
+live.setAttribute('src', './images/buttons/Icon_live.svg');
+seeLive.appendChild(live);
+
+const seeSource = document.createElement('button');
+seeSource.innerHTML = 'See source';
+seeSource.classList.add('see-project', 'popup-button');
+const source = document.createElement('img');
+source.setAttribute('src', './images/buttons/github_white.svg');
+seeSource.appendChild(source);
+
+const buttons = document.createElement('div');
+buttons.classList.add('popup-buttons');
+buttons.appendChild(seeLive);
+buttons.appendChild(seeSource);
+
 function mediaqueries(e) {
   if (e.matches) { // If media query matches
     technologie4.style.display = 'none';
@@ -98,6 +117,7 @@ container.appendChild(title);
 container.appendChild(popupImage);
 container.appendChild(popupText);
 container.appendChild(technologies);
+container.appendChild(buttons);
 
 for (var i = 0; i < openProject.length; i++) {
   openProject[i].addEventListener('click', () => {
