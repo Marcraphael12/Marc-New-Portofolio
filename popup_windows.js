@@ -1,15 +1,17 @@
 /* eslint-disable no-multi-str */
 /* eslint-disable no-plusplus */
+/* eslint-disable quotes */
 
 const container = document.createElement('div');
 const title = document.createElement('div');
 const aside = document.createElement('aside');
 const openProject = document.querySelectorAll('.see-project');
 const closeProject = document.createElement('button');
+const sct2 = document.querySelector('#stc2');
 
 const image = {
   imgDesktop: './images/photos/project_img.png',
-  imgMobile: './images/photos/project_img_smal.png'
+  imgMobile: './images/photos/project_img_smal.png',
 }
 
 const text = {
@@ -29,8 +31,8 @@ const text = {
   html: 'html',
   css: 'css',
   ror: 'Ruby on Rails',
-  github: 'Github'
-}
+  github: 'Github',
+};
 
 /* Basic script */
 
@@ -99,7 +101,7 @@ function mediaqueries(e) {
     technologie4.style.display = 'none';
     popupText.innerHTML = text.txtMobile;
     popupImage.setAttribute('src', image.imgMobile);
-		h1.style.fontSize = '20px';
+    h1.style.fontSize = '20px';
   } else {
     h1.style.fontSize = '40px';
     technologie4.style.display = 'flex';
@@ -108,7 +110,7 @@ function mediaqueries(e) {
   }
 }
 
-let media = window.matchMedia("(max-width: 600px)");
+const media = window.matchMedia("(max-width: 600px)");
 mediaqueries(media);
 media.addListener(mediaqueries);
 
@@ -119,10 +121,10 @@ container.appendChild(popupText);
 container.appendChild(technologies);
 container.appendChild(buttons);
 
-for (var i = 0; i < openProject.length; i++) {
+for (let i = 0; i < openProject.length; i++) {
   openProject[i].addEventListener('click', () => {
-  aside.appendChild(container);
-  sct2.appendChild(aside);
+    aside.appendChild(container);
+    sct2.appendChild(aside);
   });
 }
 

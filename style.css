@@ -687,20 +687,20 @@ aside {
 }
 
 .popup-buttons {
-	width: 100%;
-	max-width: 400px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-bottom: 90px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
 }
 
 .popup-button {
-	width: 150px;
-	display:flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 12px 12px;
-	margin-bottom: 24px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 12px;
+  margin-bottom: 24px;
 }
