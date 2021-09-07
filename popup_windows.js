@@ -38,7 +38,8 @@ closeProject.innerHTML = '&times;';
 closeProject.classList.add('close-project');
 
 const h1 = document.createElement('h1');
-h1.innerHTML = 'Multi - Post stories'
+h1.innerHTML = 'Multi - Post stories';
+h1.classList.add('title');
 
 title.classList.add('popup-title');
 title.appendChild(h1);
@@ -79,7 +80,9 @@ function switchText(e) {
     technologie4.style.display = 'none';
     popupText.innerHTML = text.txtMobile;
     popupImage.setAttribute('src', image.imgMobile);
+		h1.style.fontSize = '20px';
   } else {
+    h1.style.fontSize = '40px';
     technologie4.style.display = 'flex';
     popupText.innerHTML = text.txtDesktop;
     popupImage.setAttribute('src', image.imgDesktop);
