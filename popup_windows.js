@@ -75,7 +75,7 @@ technologies.appendChild(technologie2);
 technologies.appendChild(technologie3);
 technologies.appendChild(technologie4);
 
-function switchText(e) {
+function mediaqueries(e) {
   if (e.matches) { // If media query matches
     technologie4.style.display = 'none';
     popupText.innerHTML = text.txtMobile;
@@ -90,8 +90,8 @@ function switchText(e) {
 }
 
 let media = window.matchMedia("(max-width: 600px)");
-switchText(media);
-media.addListener(switchText);
+mediaqueries(media);
+media.addListener(mediaqueries);
 
 container.classList.add('project-card');
 container.appendChild(title);
