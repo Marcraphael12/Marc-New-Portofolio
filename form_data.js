@@ -38,6 +38,13 @@ const textFields = document.querySelectorAll('input, textarea');
 const saveData = (user, data) => localStorage.setItem(user, JSON.stringify(data));
 const getData = (user) => JSON.parse(localStorage.getItem(user));
 
+const formData = getData('formData');
+if (formData !== null) {
+  name.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.message;
+}
+
 textFields.forEach((e) => {
   e.addEventListener('input', () => {
     const user = {
