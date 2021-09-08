@@ -154,3 +154,11 @@ block1.append(seeProject);
 for (let i = 1; i < 5; i++) {
   cardsContainer.append(card.cloneNode(true));
 }
+
+// The popup window
+const popupContainer = document.querySelector('.popup-container');
+// popupContainer.classList.add('popup-container');
+
+const popup = document.createElement('div');
+popup.classList.add('popup');
+popupContainer.append(popup);
