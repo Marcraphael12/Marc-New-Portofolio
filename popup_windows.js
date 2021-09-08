@@ -162,3 +162,7 @@ const popupContainer = document.querySelector('.popup-container');
 const popup = document.createElement('div');
 popup.classList.add('popup');
 popupContainer.append(popup);
+
+const titleClose = document.createElement('div');
+titleClose.classList.add('title-close');
+popup.append(titleClose);
