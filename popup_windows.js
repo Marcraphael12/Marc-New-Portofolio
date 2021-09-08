@@ -113,3 +113,9 @@ const projects = [
 ];
 
 /* Basic script */
+
+const cardsContainer = document.querySelector('.work-list');
+
+// The cards
+const card = document.createElement('li'); // the card
+card.classList.add('work-list-item');
