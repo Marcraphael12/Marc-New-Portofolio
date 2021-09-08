@@ -220,7 +220,7 @@ media.addListener(mediaqueries);
 const openProject = document.querySelectorAll('.see-project');
 for (let i = 0; i < openProject.length - 1; i++) {
   openProject[i].addEventListener('click', () => {
-    popupContainer.style.display = 'flex';
+    popupContainer.style.display = 'block';
   });
 }
 

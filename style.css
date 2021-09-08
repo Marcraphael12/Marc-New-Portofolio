@@ -615,25 +615,26 @@ form div {
 /* This part is only for the popup_windows */
 .popup-container {
   width: 100%;
-  height: 100%;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   background: rgba(27, 23, 102, 0.99);
   display: none;
-  align-items: center;
-  justify-content: center;
+  overflow: scroll;
 }
 
 .popup {
-  width: 90%;
+  width: 95%;
   max-width: 1108px;
-  height: auto;
   border: 2px solid white;
   padding: 24px;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 50px auto;
 }
 
 .title-close {
