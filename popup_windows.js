@@ -184,3 +184,11 @@ popup.append(popupImage);
 const popupPara = document.createElement('p');
 popupPara.classList.add('popup-para');
 popup.append(popupPara);
+
+const popupTechs = document.createElement('ul');
+popupTechs.classList.add('popup-techs', 'techs');
+popupTechs.innerHTML = `<li class="tech">${projects[0].technologies[1]}</li>
+<li class="tech popup-tech">${projects[0].technologies[4]}</li>
+<li class="tech popup-tech">${projects[0].technologies[0]}</li>
+<li class="tech popup-tech">${projects[0].technologies[5]}</li>`;
+popup.append(popupTechs);
