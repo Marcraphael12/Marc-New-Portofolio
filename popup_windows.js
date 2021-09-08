@@ -192,3 +192,10 @@ popupTechs.innerHTML = `<li class="tech">${projects[0].technologies[1]}</li>
 <li class="tech popup-tech">${projects[0].technologies[0]}</li>
 <li class="tech popup-tech">${projects[0].technologies[5]}</li>`;
 popup.append(popupTechs);
+
+const popupButtons = document.createElement('div');
+popupButtons.classList.add('popup-buttons');
+popupButtons.innerHTML = `
+<a href=${projects[0].links[0]} class="see-project popup-button">${projects[0].button[1]}<img src="./images/buttons/Icon_live.svg" alt="#"></a>
+<a href=${projects[0].links[1]} class="see-project popup-button">${projects[0].button[2]}<img src="./images/buttons/github_white.svg" alt="#"></a>`;
+popup.append(popupButtons);
