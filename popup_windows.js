@@ -176,3 +176,7 @@ const closePopup = document.createElement('button');
 closePopup.innerHTML = '&times;';
 closePopup.classList.add('close-popup');
 titleClose.append(closePopup);
+
+const popupImage = document.createElement('img');
+popupImage.classList.add('popup-image');
+popup.append(popupImage);
