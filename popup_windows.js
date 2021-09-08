@@ -215,3 +215,14 @@ function mediaqueries(e) {
 const media = window.matchMedia("(max-width: 600px)");
 mediaqueries(media);
 media.addListener(mediaqueries);
+
+const openProject = document.querySelectorAll('.see-project');
+for (let i = 0; i < openProject.length - 1; i++) {
+  openProject[i].addEventListener('click', () => {
+  popupContainer.style.display = 'flex';
+  });
+};
+
+closePopup.addEventListener('click', () => {
+  popupContainer.style.display = 'none';
+});
