@@ -110,7 +110,7 @@ const projects = [
       technologies: ["css", "html", "Bootstrap", "Ruby", 'Ruby on rails', 'Github'],
     button: ['See Project', 'See live', 'See source'],
     links: ['https://www.google.com', 'https://github.com/Marcraphael12'],
-  };
+  },
 ];
 
 /* Basic script */
