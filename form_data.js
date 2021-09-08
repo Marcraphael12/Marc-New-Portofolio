@@ -34,17 +34,9 @@ const submit = document.querySelector('.submit');
 const name = document.querySelector('.name');
 const message = document.querySelector('.message');
 const textFields = document.querySelectorAll('input, textarea');
-// SAVE TO LOCAL STORAGE
 
-const toLocalStorage = (user, data) => localStorage.setItem(user, JSON.stringify(data));
-const fromLocalStorage = (user) => JSON.parse(localStorage.getItem(user));
-
-const formData = fromLocalStorage('formData');
-if (formData !== null) {
-  name.value = formData.name;
-  email.value = formData.email;
-  message.value = formData.message;
-}
+const saveData = (user, data) => localStorage.setItem(user, JSON.stringify(data));
+const getData = (user) => JSON.parse(localStorage.getItem(user));
 
 textFields.forEach((e) => {
   e.addEventListener('input', () => {
@@ -53,6 +45,6 @@ textFields.forEach((e) => {
       email: email.value,
       message: message.value,
     };
-    toLocalStorage('formData', user);
+    saveData('formData', user);
   });
 });
