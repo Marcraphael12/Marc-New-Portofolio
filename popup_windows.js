@@ -124,3 +124,7 @@ const image1 = document.createElement('img');
 image1.setAttribute('src', projects[0].image[0]);
 image1.classList.add('work-img');
 card.append(image1);
+
+const block1 = document.createElement('div');
+block1.classList.add('block');
+card.append(block1);
