@@ -166,3 +166,13 @@ popupContainer.append(popup);
 const titleClose = document.createElement('div');
 titleClose.classList.add('title-close');
 popup.append(titleClose);
+
+const title = document.createElement('h1');
+title.classList.add('title');
+title.innerHTML = projects[0].name;
+titleClose.append(title);
+
+const closePopup = document.createElement('button');
+closePopup.innerHTML = '&times;';
+closePopup.classList.add('close-popup');
+titleClose.append(closePopup);
