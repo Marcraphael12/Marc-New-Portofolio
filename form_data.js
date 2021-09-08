@@ -30,7 +30,6 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 // Local Storage
-const submit = document.querySelector('.submit');
 const name = document.querySelector('.name');
 const message = document.querySelector('.message');
 const textFields = document.querySelectorAll('input, textarea');
