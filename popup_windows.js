@@ -2,132 +2,114 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable quotes */
 
-const container = document.createElement('div');
-const title = document.createElement('div');
-const aside = document.createElement('aside');
-const openProject = document.querySelectorAll('.see-project');
-const closeProject = document.createElement('button');
-const sct2 = document.querySelector('#sct2');
+const projects = [
+  {
+  id: 'card1',
+    name: "Multi - Post stories",
 
-const image = {
-  imgDesktop: './images/photos/project_img.png',
-  imgMobile: './images/photos/project_img_smal.png',
-};
+    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required.\
+  has been the industry's standard dummy text ever since the 1500s, when an unknown printer\
+  took a standard dummy text.",
 
-const text = {
-  txtDesktop: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took\
+  a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and\
+  typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
   industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\
-  scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry\
-  . Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum\
+  scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum\
   is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard\
-  dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.",
+  dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."],
 
-  txtMobile: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown\
-  printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy\
-  text of the printing and typesetting  ever since the 1500s, when an unknown printer took a\
-  galley of type veris lapoa todoe.",
+    image: ['./images/photos/Img_Placeholder.png', './images/photos/project_img_smal.png', './images/photos/project_img.png'],
 
-  html: 'html',
-  css: 'css',
-  ror: 'Ruby on Rails',
-  github: 'Github',
-};
+    technologies: ["css", "html", "Bootstrap", "Ruby", 'Ruby on rails', 'Github'],
+  button: ['See Project', 'See live', 'See source'],
+    links: ['https://www.google.com', 'https://github.com/Marcraphael12'],
+  },
+
+  {
+  id: 'card2',
+    name: "Multi - Post stories",
+
+    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required.\
+  has been the industry's standard dummy text ever since the 1500s, when an unknown printer\
+  took a standard dummy text.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took\
+  a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and\
+  typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
+  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\
+  scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum\
+  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard\
+  dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."],
+
+    image: ['./images/photos/Img_Placeholder.png', './images/photos/project_img_smal.png', './images/photos/project_img.png'],
+
+    technologies: ["css", "html", "Bootstrap", "Ruby", 'Ruby on rails', 'Github'],
+  button: ['See Project', 'See live', 'See source'],
+    links: ['https://www.google.com', 'https://github.com/Marcraphael12'],
+  },
+
+  {
+  id: 'card3',
+    name: "Multi - Post stories",
+
+    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required.\
+  has been the industry's standard dummy text ever since the 1500s, when an unknown printer\
+  took a standard dummy text.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took\
+  a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and\
+  typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
+  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\
+  scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum\
+  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard\
+  dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."],
+
+    image: ['./images/photos/Img_Placeholder.png', './images/photos/project_img_smal.png', './images/photos/project_img.png'],
+
+    technologies: ["css", "html", "Bootstrap", "Ruby", 'Ruby on rails', 'Github'],
+  button: ['See Project', 'See live', 'See source'],
+    links: ['https://www.google.com', 'https://github.com/Marcraphael12'],
+  },
+
+  {
+  id: 'card4',
+    name: "Multi - Post stories",
+
+    description: ["A daily selection of privately personalized reads; no accounts or sign-ups required.\
+  has been the industry's standard dummy text ever since the 1500s, when an unknown printer\
+  took a standard dummy text.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took\
+  a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and\
+  typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.",
+
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\
+  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and\
+  scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.\
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum\
+  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard\
+  dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble."],
+
+    image: ['./images/photos/Img_Placeholder.png', './images/photos/project_img_smal.png', './images/photos/project_img.png'],
+
+    technologies: ["css", "html", "Bootstrap", "Ruby", 'Ruby on rails', 'Github'],
+  button: ['See Project', 'See live', 'See source'],
+    links: ['https://www.google.com', 'https://github.com/Marcraphael12'],
+  }
+];
 
 /* Basic script */
-
-closeProject.innerHTML = '&times;';
-closeProject.classList.add('close-project');
-
-const h1 = document.createElement('h1');
-h1.innerHTML = 'Multi - Post stories';
-h1.classList.add('title');
-
-title.classList.add('popup-title');
-title.appendChild(h1);
-title.appendChild(closeProject);
-
-const popupImage = document.createElement('img');
-popupImage.classList.add('popup-image');
-
-const popupText = document.createElement('p');
-popupText.classList.add('popup-text');
-
-const technologie1 = document.createElement('li');
-technologie1.innerHTML = text.html;
-technologie1.classList.add('tech', 'popup-tech');
-
-const technologie2 = document.createElement('li');
-technologie2.innerHTML = text.ror;
-technologie2.classList.add('tech', 'popup-tech');
-const technologie3 = document.createElement('li');
-
-technologie3.innerHTML = text.css;
-technologie3.classList.add('tech', 'popup-tech');
-const technologie4 = document.createElement('li');
-
-technologie4.innerHTML = text.github;
-technologie4.classList.add('tech', 'popup-tech');
-technologie4.style.borderRight = '2px solid #646369';
-
-const technologies = document.createElement('ul');
-technologies.classList.add('techs', 'popup-techs');
-technologies.appendChild(technologie1);
-technologies.appendChild(technologie2);
-technologies.appendChild(technologie3);
-technologies.appendChild(technologie4);
-
-const seeLive = document.createElement('button');
-seeLive.innerHTML = 'See live';
-seeLive.classList.add('see-project', 'popup-button');
-const live = document.createElement('img');
-live.setAttribute('src', './images/buttons/Icon_live.svg');
-seeLive.appendChild(live);
-
-const seeSource = document.createElement('button');
-seeSource.innerHTML = 'See source';
-seeSource.classList.add('see-project', 'popup-button');
-const source = document.createElement('img');
-source.setAttribute('src', './images/buttons/github_white.svg');
-seeSource.appendChild(source);
-
-const buttons = document.createElement('div');
-buttons.classList.add('popup-buttons');
-buttons.appendChild(seeLive);
-buttons.appendChild(seeSource);
-
-function mediaqueries(e) {
-  if (e.matches) { // If media query matches
-    technologie4.style.display = 'none';
-    popupText.innerHTML = text.txtMobile;
-    popupImage.setAttribute('src', image.imgMobile);
-    h1.style.fontSize = '20px';
-  } else {
-    h1.style.fontSize = '40px';
-    technologie4.style.display = 'flex';
-    popupText.innerHTML = text.txtDesktop;
-    popupImage.setAttribute('src', image.imgDesktop);
-  }
-}
-
-const media = window.matchMedia("(max-width: 600px)");
-mediaqueries(media);
-media.addListener(mediaqueries);
-
-container.classList.add('project-card');
-container.appendChild(title);
-container.appendChild(popupImage);
-container.appendChild(popupText);
-container.appendChild(technologies);
-container.appendChild(buttons);
-
-for (let i = 0; i < openProject.length; i++) {
-  openProject[i].addEventListener('click', () => {
-    aside.appendChild(container);
-    sct2.appendChild(aside);
-  });
-}
-
-closeProject.addEventListener('click', () => {
-  sct2.removeChild(aside);
-});
