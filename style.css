@@ -613,27 +613,18 @@ form div {
 }
 
 /* This part is only for the popup_windows */
-aside {
+.popup-container {
   width: 100%;
   height: 100%;
   top: 0;
   position: fixed;
   background: rgba(27, 23, 102, 0.99);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
-
-.close-project {
-  width: max-content;
-  background: none;
-  font-weight: 300;
-  font-size: 38px;
-  border: none;
-}
-
-.project-card {
-  width: 90%;
+.popup {
+	width: 90%;
   max-width: 1108px;
   height: auto;
   border: 2px solid white;
@@ -644,39 +635,42 @@ aside {
   flex-direction: column;
 }
 
-.popup-title {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  margin-bottom: 40px;
+.title-close {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
 }
 
 .title {
-  font-weight: 500;
-  width: max-content;
-  height: auto;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.close-popup {
+	font-size: 38px;
+	font-weight: 300;
 }
 
 .popup-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 40px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 24px;
 }
 
-.popup-text {
-  font-size: 16px;
-  text-align: center;
-  width: 100%;
-  max-width: 684px;
-  height: auto;
-  margin-bottom: 60px;
-  line-height: 30px;
+.popup-para {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	max-width: 684px;
+	width: 100%;
 }
 
 .popup-techs {
-  width: max-content;
+	display: flex;
+  width: 100%;
+	max-width: 314px;
   border-left: 2px solid #646369;
   margin-bottom: 50px;
 }
@@ -684,6 +678,13 @@ aside {
 .popup-tech {
   width: max-content;
   padding: 0 14px;
+	border-right: 2px solid #646369 !important;
+}
+
+@media screen and (max-width: 600px) {
+	.popup-tech:last-child {
+		display: none;
+	}
 }
 
 .popup-buttons {
