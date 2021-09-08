@@ -137,3 +137,16 @@ const para1 = document.createElement('p');
 para1.classList.add('work-para');
 para1.innerHTML = projects[0].description[0];
 block1.append(para1);
+
+const techList = document.createElement('ul');
+techList.classList.add('techs');
+techList.innerHTML = `<li class="tech">${projects[0].technologies[0]}</li>
+<li class="tech">${projects[0].technologies[1]}</li>
+<li class="tech">${projects[0].technologies[2]}</li>
+<li class="tech">${projects[0].technologies[3]}</li>`;
+block1.append(techList);
+
+const seeProject = document.createElement('button');
+seeProject.classList.add('see-project');
+seeProject.innerHTML = projects[0].button[0];
+block1.append(seeProject);
