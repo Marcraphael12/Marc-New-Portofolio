@@ -13,6 +13,10 @@ email.addEventListener("keyup", function (event) {
   } else {
     email.setCustomValidity("");
   }
+
+	if (!lowerCase(email.value)) {
+		email.setCustomValidity("Hey dear, use lower case only please!")
+	}
 });
 
 for (let i = 0; i < inputs.length; i++) {
