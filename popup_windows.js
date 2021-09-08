@@ -128,3 +128,12 @@ card.append(image1);
 const block1 = document.createElement('div');
 block1.classList.add('block');
 card.append(block1);
+
+const name1 = document.createElement('h3');
+name1.innerHTML = projects[0].name;
+block1.append(name1);
+
+const para1 = document.createElement('p');
+para1.classList.add('work-para');
+para1.innerHTML = projects[0].description[0];
+block1.append(para1);
