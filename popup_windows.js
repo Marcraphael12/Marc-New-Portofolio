@@ -150,3 +150,7 @@ const seeProject = document.createElement('button');
 seeProject.classList.add('see-project');
 seeProject.innerHTML = projects[0].button[0];
 block1.append(seeProject);
+
+for (let i = 1; i < 5; i++) {
+  cardsContainer.append(card.cloneNode(true));
+}
