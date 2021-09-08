@@ -14,18 +14,18 @@ email.addEventListener("keyup", function (event) {
     email.setCustomValidity("");
   }
 
-	if (!lowerCase(email.value)) {
-		email.setCustomValidity("Hey dear, use lower case only please!")
-	}
+  if (!lowerCase(email.value)) {
+  email.setCustomValidity("Hey dear, use lower case only please!")
+  }
 });
 
 for (let i = 0; i < inputs.length; i++) {
-	inputs[i].addEventListener("keyup", function (event) {
-		if (inputs[i].validity.valid) {
-			inputs[i].style.border = '2px solid green';
-		}
-		else {
-			inputs[i].style.border = '2px solid red';
-		}
-	});
+  inputs[i].addEventListener("keyup", function (event) {
+  if (inputs[i].validity.valid) {
+  inputs[i].style.border = '2px solid green';
+  }
+  else {
+  inputs[i].style.border = '2px solid red';
+  }
+  });
 }
