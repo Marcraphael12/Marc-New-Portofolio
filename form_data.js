@@ -23,8 +23,7 @@ for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("keyup", () => {
     if (inputs[i].validity.valid) {
       inputs[i].style.border = '2px solid green';
-    }
-    else {
+    } else {
       inputs[i].style.border = '2px solid red';
     }
   });
