@@ -119,3 +119,8 @@ const cardsContainer = document.querySelector('.work-list');
 // The cards
 const card = document.createElement('li'); // the card
 card.classList.add('work-list-item');
+
+const image1 = document.createElement('img');
+image1.setAttribute('src', projects[0].image[0]);
+image1.classList.add('work-img');
+card.append(image1);
