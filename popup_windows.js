@@ -180,3 +180,7 @@ titleClose.append(closePopup);
 const popupImage = document.createElement('img');
 popupImage.classList.add('popup-image');
 popup.append(popupImage);
+
+const popupPara = document.createElement('p');
+popupPara.classList.add('popup-para');
+popup.append(popupPara);
