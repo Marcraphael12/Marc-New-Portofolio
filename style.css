@@ -624,7 +624,7 @@ form div {
   justify-content: center;
 }
 .popup {
-	width: 90%;
+  width: 90%;
   max-width: 1108px;
   height: auto;
   border: 2px solid white;
@@ -636,41 +636,41 @@ form div {
 }
 
 .title-close {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .title {
-	font-size: 20px;
-	font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .close-popup {
-	font-size: 38px;
-	font-weight: 300;
+  font-size: 38px;
+  font-weight: 300;
 }
 
 .popup-image {
-	width: 100%;
-	height: auto;
-	margin-bottom: 24px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
 }
 
 .popup-para {
-	font-size: 16px;
-	line-height: 24px;
-	text-align: center;
-	max-width: 684px;
-	width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 684px;
+  width: 100%;
 }
 
 .popup-techs {
-	display: flex;
+  display: flex;
   width: 100%;
-	max-width: 314px;
+  max-width: 314px;
   border-left: 2px solid #646369;
   margin-bottom: 50px;
 }
@@ -678,13 +678,13 @@ form div {
 .popup-tech {
   width: max-content;
   padding: 0 14px;
-	border-right: 2px solid #646369 !important;
+  border-right: 2px solid #646369 !important;
 }
 
 @media screen and (max-width: 600px) {
-	.popup-tech:last-child {
-		display: none;
-	}
+  .popup-tech:last-child {
+  display: none;
+  }
 }
 
 .popup-buttons {
