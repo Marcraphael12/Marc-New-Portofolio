@@ -7,7 +7,7 @@ const title = document.createElement('div');
 const aside = document.createElement('aside');
 const openProject = document.querySelectorAll('.see-project');
 const closeProject = document.createElement('button');
-const sct2 = document.querySelector('#stc2');
+const sct2 = document.querySelector('#sct2');
 
 const image = {
   imgDesktop: './images/photos/project_img.png',
