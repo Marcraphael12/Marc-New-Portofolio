@@ -199,3 +199,19 @@ popupButtons.innerHTML = `
 <a href=${projects[0].links[0]} class="see-project popup-button">${projects[0].button[1]}<img src="./images/buttons/Icon_live.svg" alt="#"></a>
 <a href=${projects[0].links[1]} class="see-project popup-button">${projects[0].button[2]}<img src="./images/buttons/github_white.svg" alt="#"></a>`;
 popup.append(popupButtons);
+
+function mediaqueries(e) {
+  if (e.matches) { // If media query matches
+    popupPara.innerHTML = projects[0].description[1];
+    popupImage.setAttribute('src', projects[0].image[1]);
+    title.style.fontSize = '20px';
+  } else {
+    title.style.fontSize = '40px';
+  popupPara.innerHTML = projects[0].description[2];
+    popupImage.setAttribute('src', projects[0].image[2]);
+  }
+}
+
+const media = window.matchMedia("(max-width: 600px)");
+mediaqueries(media);
+media.addListener(mediaqueries);
