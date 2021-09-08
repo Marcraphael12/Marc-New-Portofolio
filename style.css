@@ -611,3 +611,99 @@ form div {
   justify-content: start;
   align-items: initial;
 }
+
+/* This part is only for the popup_windows */
+.popup-container {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(27, 23, 102, 0.99);
+  display: none;
+  overflow: scroll;
+}
+
+.popup {
+  width: 95%;
+  max-width: 1108px;
+  border: 2px solid white;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.title-close {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.close-popup {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.popup-para {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 684px;
+  width: 100%;
+}
+
+.popup-techs {
+  display: flex;
+  width: 100%;
+  max-width: 314px;
+  border-left: 2px solid #646369;
+  margin-bottom: 50px;
+}
+
+.popup-tech {
+  width: max-content;
+  padding: 0 14px;
+  border-right: 2px solid #646369 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .popup-tech:last-child {
+    display: none;
+  }
+}
+
+.popup-buttons {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+
+.popup-button {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 12px;
+  margin-bottom: 24px;
+}
