@@ -5,6 +5,7 @@
 
 const email = document.querySelector('.email');
 const inputs = document.querySelectorAll('.input');
+const lowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str); // functio to test if the email value is lower Case only
 
 email.addEventListener("keyup", function (event) {
   if(email.validity.typeMismatch) {
