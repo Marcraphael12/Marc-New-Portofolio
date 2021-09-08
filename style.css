@@ -623,6 +623,7 @@ form div {
   align-items: center;
   justify-content: center;
 }
+
 .popup {
   width: 90%;
   max-width: 1108px;
@@ -683,7 +684,7 @@ form div {
 
 @media screen and (max-width: 600px) {
   .popup-tech:last-child {
-  display: none;
+    display: none;
   }
 }
 
