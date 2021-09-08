@@ -6,7 +6,7 @@ email.addEventListener('keyup', () => {
   if (email.validity.typeMismatch) {
     email.setCustomValidity('Hey dear, Sorry but i\'m waiting an email here!');
   } else {
-    email.setCustomValidity("");
+    email.setCustomValidity('');
   }
 
   if (!lowerCase(email.value)) {
@@ -14,7 +14,7 @@ email.addEventListener('keyup', () => {
   }
 });
 
-for (let i = 0; i < inputs.length; i+1) {
+for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener('keyup', () => {
     if (inputs[i].validity.valid) {
       inputs[i].style.border = '2px solid green';
