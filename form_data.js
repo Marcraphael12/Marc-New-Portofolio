@@ -30,3 +30,29 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 // Local Storage
+const submit = document.querySelector('.submit');
+const name = document.querySelector('.name');
+const message = document.querySelector('.message');
+const textFields = document.querySelectorAll('input, textarea');
+// SAVE TO LOCAL STORAGE
+
+const toLocalStorage = (user, data) => localStorage.setItem(user, JSON.stringify(data));
+const fromLocalStorage = (user) => JSON.parse(localStorage.getItem(user));
+
+const formData = fromLocalStorage('formData');
+if (formData !== null) {
+  name.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.message;
+}
+
+textFields.forEach((e) => {
+  e.addEventListener('input', () => {
+    const user = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    toLocalStorage('formData', user);
+  });
+});
