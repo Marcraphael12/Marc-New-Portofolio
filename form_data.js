@@ -17,9 +17,9 @@ email.addEventListener('keyup', () => {
 for (let i = 0; i < inputs.length; i += 1) {
   inputs[i].addEventListener('keyup', () => {
     if (inputs[i].validity.valid) {
-      inputs[i].style.border = '2px solid green';
+      inputs[i].style.border = '4px solid #1dfc00';
     } else {
-      inputs[i].style.border = '2px solid red';
+      inputs[i].style.border = '4px solid red';
     }
   });
 }
